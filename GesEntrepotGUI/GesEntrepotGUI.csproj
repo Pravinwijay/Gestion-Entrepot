@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98265733-89E5-4F25-8874-DDA7C111555D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GesEntrepotGUI</RootNamespace>
+    <AssemblyName>GesEntrepotGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAjoutEntreprise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjoutEntreprise.Designer.cs">
+      <DependentUpon>FrmAjoutEntreprise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultEntreprises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultEntreprises.Designer.cs">
+      <DependentUpon>FrmConsultEntreprises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModifEntreprise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModifEntreprise.Designer.cs">
+      <DependentUpon>FrmModifEntreprise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSuppEntreprise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSuppEntreprise.Designer.cs">
+      <DependentUpon>FrmSuppEntreprise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSBEntrepotsDataSet.Designer.cs" />
+    <Compile Include="GSBEntrepotsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSBEntrepotsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GSBEntrepotsDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSBEntrepotsDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GSBEntrepotsDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSBEntrepotsDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="GSBEntrepotsDataSet.xsc">
+      <DependentUpon>GSBEntrepotsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GSBEntrepotsDataSet.xsd" />
+    <None Include="GSBEntrepotsDataSet.xss">
+      <DependentUpon>GSBEntrepotsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GSBEntrepotsDataSet1.xsc">
+      <DependentUpon>GSBEntrepotsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GSBEntrepotsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSBEntrepotsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GSBEntrepotsDataSet1.xss">
+      <DependentUpon>GSBEntrepotsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GSBEntrepotsDataSet21.xsc">
+      <DependentUpon>GSBEntrepotsDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="GSBEntrepotsDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSBEntrepotsDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GSBEntrepotsDataSet21.xss">
+      <DependentUpon>GSBEntrepotsDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="GSBEntrepotsDataSet3.xsc">
+      <DependentUpon>GSBEntrepotsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="GSBEntrepotsDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSBEntrepotsDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GSBEntrepotsDataSet3.xss">
+      <DependentUpon>GSBEntrepotsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GesEntrepotBLL\GesEntrepotBLL.csproj">
+      <Project>{615B6485-4ACD-4BD9-A673-667575A7148F}</Project>
+      <Name>GesEntrepotBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GesEntrepotBO\GesEntrepotBO.csproj">
+      <Project>{B6D63BD3-0A39-4DD3-9BCF-F29FFDDCE854}</Project>
+      <Name>GesEntrepotBO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAjoutEntreprise.resx">
+      <DependentUpon>FrmAjoutEntreprise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultEntreprises.resx">
+      <DependentUpon>FrmConsultEntreprises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModifEntreprise.resx">
+      <DependentUpon>FrmModifEntreprise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSuppEntreprise.resx">
+      <DependentUpon>FrmSuppEntreprise.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
